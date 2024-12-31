@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:first_project/components/new_task_bottom_sheet.dart';
+import 'package:first_project/screens/profile.dart';
+
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -101,7 +103,14 @@ class _HomepageState extends State<Homepage> {
                   Icons.person,
                   color: Colors.white,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Profile(),
+                    ),
+                  );
+                },
               ),
             ],
           ),
