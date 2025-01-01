@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:first_project/components/donut_chart.dart';
+import 'package:first_project/components/bottom_nav.dart';
 
 class Profile extends StatefulWidget {
   const Profile({Key? key}) : super(key: key);
@@ -12,6 +13,7 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNav(),
       appBar: AppBar(
         backgroundColor: Colors.black,
         leading: IconButton(

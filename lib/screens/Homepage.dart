@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:first_project/components/new_task_bottom_sheet.dart';
 import 'package:first_project/screens/profile.dart';
+import 'package:first_project/components/bottom_nav.dart';
 
 
 class Homepage extends StatefulWidget {
@@ -81,41 +82,7 @@ class _HomepageState extends State<Homepage> {
         ),
       ),
       backgroundColor: Colors.white,
-      bottomNavigationBar: BottomAppBar(
-        color: Colors.black,
-        shape: const CircularNotchedRectangle(),
-        notchMargin: 5.0,
-        child: SizedBox(
-          height: kBottomNavigationBarHeight,
-          child: Row(
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              IconButton(
-                icon: const Icon(
-                  Icons.home,
-                  color: Colors.white,
-                ),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: const Icon(
-                  Icons.person,
-                  color: Colors.white,
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const Profile(),
-                    ),
-                  );
-                },
-              ),
-            ],
-          ),
-        ),
-      ),
+      bottomNavigationBar: BottomNav(),
       appBar: AppBar(
         backgroundColor: Colors.black,
         automaticallyImplyLeading: false,
