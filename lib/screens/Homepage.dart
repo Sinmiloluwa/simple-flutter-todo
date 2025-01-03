@@ -19,8 +19,8 @@ class _HomepageState extends State<Homepage> {
       'subtitle': 'Do not use the detergent',
     },
     {
-      'title': 'Smack Salman ass',
-      'subtitle': 'Shake it well',
+      'title': 'Clear out the trash',
+      'subtitle': 'Dispose properly',
     },
     {
       'title': 'Wash my clothes',
