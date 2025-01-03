@@ -24,17 +24,30 @@ class _DonutChartState extends State<DonutChart> {
                   PieChartSectionData(
                     value: 45,
                     color: Colors.yellow,
-                    radius: 15,
-                    showTitle: false
+                    radius: 40, // Increased radius for better visibility
+                    title: 'Completed', // Display value as a title
+                    titleStyle: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                    showTitle: true,
                   ),
                   PieChartSectionData(
-                      value: 25,
-                      color: Colors.blue,
-                      radius: 15,
-                      showTitle: false
-                  )
-                ]
-              )
+                    value: 25,
+                    color: Colors.blue,
+                    radius: 40, // Increased radius for better visibility
+                    title: 'Uncompleted', // Display value as a title
+                    titleStyle: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                    showTitle: true,
+                  ),
+                ],
+                centerSpaceRadius: 50, // Adjust the center space to create a donut effect
+              ),
             ),
           ),
         ],

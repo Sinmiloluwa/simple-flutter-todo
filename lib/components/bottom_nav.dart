@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:first_project/screens/profile.dart';
+import 'package:first_project/screens/Homepage.dart';
 
 class BottomNav extends StatefulWidget {
   const BottomNav({super.key});
@@ -26,7 +27,14 @@ class _BottomNavState extends State<BottomNav> {
                 Icons.home,
                 color: Colors.white,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Homepage(),
+                  ),
+                );
+              },
             ),
             IconButton(
               icon: const Icon(
